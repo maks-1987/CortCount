@@ -24,7 +24,9 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:padding="5dp"
+                android:layout_marginTop="16dp"
                 android:text="Team A"
+                android:textColor="@android:color/background_dark"
                 android:textSize="25sp" />
 
             <TextView
@@ -33,8 +35,10 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:padding="5dp"
+                android:layout_marginTop="16dp"
                 android:text="0"
-                android:textSize="25sp" />
+                android:textStyle="bold"
+                android:textSize="60sp" />
 
             <Button
                 android:layout_width="match_parent"
@@ -42,7 +46,7 @@
                 android:layout_margin="8dp"
                 android:onClick="threePointsA"
                 android:text="+3 points"
-                android:textSize="25sp" />
+                android:textSize="20sp" />
 
             <Button
                 android:layout_width="match_parent"
@@ -50,7 +54,7 @@
                 android:layout_margin="8dp"
                 android:onClick="twoPointsA"
                 android:text="+2 points"
-                android:textSize="25sp" />
+                android:textSize="20sp" />
 
             <Button
                 android:layout_width="match_parent"
@@ -58,8 +62,13 @@
                 android:layout_margin="8dp"
                 android:onClick="freeThrowA"
                 android:text="FREE THROW"
-                android:textSize="25sp" />
+                android:textSize="20sp" />
         </LinearLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray"/>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -73,6 +82,8 @@
                 android:layout_gravity="center"
                 android:padding="5dp"
                 android:text="Team B"
+                android:layout_marginTop="16dp"
+                android:textColor="@android:color/background_dark"
                 android:textSize="25sp" />
 
             <TextView
@@ -81,8 +92,10 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:padding="5dp"
+                android:layout_marginTop="16dp"
                 android:text="0"
-                android:textSize="25sp" />
+                android:textStyle="bold"
+                android:textSize="60sp" />
 
             <Button
                 android:layout_width="match_parent"
@@ -90,7 +103,7 @@
                 android:layout_margin="8dp"
                 android:onClick="threePointsB"
                 android:text="+3 points"
-                android:textSize="25sp" />
+                android:textSize="20sp" />
 
             <Button
                 android:layout_width="match_parent"
@@ -98,7 +111,7 @@
                 android:layout_margin="8dp"
                 android:onClick="twoPointsB"
                 android:text="+2 points"
-                android:textSize="25sp" />
+                android:textSize="20sp" />
 
             <Button
                 android:layout_width="match_parent"
@@ -106,7 +119,7 @@
                 android:layout_margin="8dp"
                 android:onClick="freeThrowB"
                 android:text="FREE THROW"
-                android:textSize="25sp" />
+                android:textSize="20sp" />
         </LinearLayout>
 
     </LinearLayout>
@@ -119,9 +132,11 @@
             android:id="@+id/reset_points"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:text="Reset"
+            android:textSize="20sp"
             android:onClick="resetCount"/>
     </RelativeLayout>
 
